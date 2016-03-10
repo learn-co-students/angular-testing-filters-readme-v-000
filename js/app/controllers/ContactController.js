@@ -5,7 +5,7 @@ function ContactController($filter) {
         name: 'Tom'
     }];
 
-    this.search = 'B';
+    this.search = 'T';
 
     this.filteredList = $filter('filter')(this.list, this.search);
 
