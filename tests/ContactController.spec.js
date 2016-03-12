@@ -26,4 +26,4 @@ describe('ContactController', function () {
         expect($scope.vm.filteredList[0]).toEqual({name: 'Tom'});
     });
 
-});
+}); //John was here
