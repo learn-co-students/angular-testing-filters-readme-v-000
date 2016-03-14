@@ -19,11 +19,11 @@ describe('ContactController', function () {
         var $scope = {};
         $controller('ContactController as vm', {$scope: $scope});
 
-        $scope.vm.search = 'T';
+        $scope.vm.search = 'S';
 
         $scope.vm.changeFilter();
 
-        expect($scope.vm.filteredList[0]).toEqual({name: 'Tom'});
+        expect($scope.vm.filteredList[0]).toEqual({name: 'Sam'});
     });
 
 });
