@@ -7,7 +7,7 @@ describe('ContactController', function () {
         $controller = _$controller_;
     }));
 
-
+    //test controller rather than DOM
     it('should filter the results correctly', function () {
         var $scope = {};
         $controller('ContactController as vm', {$scope: $scope});
