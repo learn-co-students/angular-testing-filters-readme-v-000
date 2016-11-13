@@ -15,4 +15,15 @@ describe('ContactController', function () {
       // $scope.vm holds all of our values
       expect($scope.vm.filteredList[0]).toEqual({name: 'Bob'});
   });
+
+  it('should re-filter the results correctly when changing search term', function () {
+      var $scope = {};
+      $controller('ContactController as vm', {$scope: $scope});
+   
+      $scope.vm.search = 'T';
+   
+      $scope.vm.changeFilter();
+   
+      expect($scope.vm.filteredList[0]).toEqual({name: 'Tom'});
+  });
 });
