@@ -13,5 +13,6 @@ describe('ContactController', function () {
       $controller('ContactController as vm', {$scope: $scope});
 
       // $scope.vm holds all of our values
+      expect($scope.vm.filteredList[0]).toEqual({name: 'Bob'});
   });
 });
